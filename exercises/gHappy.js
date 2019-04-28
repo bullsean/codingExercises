@@ -6,18 +6,16 @@ A lowercase 'g' in a string is "happy" if there is another 'g' immediately to it
 		function("xxggxx") => true
 		function("xxgxx") => false
 
-        Write your code below the comment.
+		Write your code below the comment.
+		describe('gHappy.js', () => {
+
 */
-var newArray = str.split('');
-gArray = [];
 
-for(let i=0; i<newArray.length; i++) {
-	if (newArray[i] === "g") {
-		gArray.push(newArray.indexOf[i])
-	}
-	console.log(gArray)
+
+if(/(?<!g)g(?!g)/.test(str)) {
+	return false
+} else {
+	return true
 }
-
-
 
 };
