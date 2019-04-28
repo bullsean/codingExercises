@@ -13,7 +13,7 @@ module.exports.run = function(csv){
 
 	Write your code below the comment.
 */
-const csv = csv;
+
 const CSV_to_JSON = (data, delimiter = ',') => {
 	//data = the array being passed into the function
 	//.slice starts at the first [0] index of the array, and goes until the '/n' indicator and returns the selected elements as a new array object
