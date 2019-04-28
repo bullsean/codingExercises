@@ -13,9 +13,11 @@ gArray = [];
 
 for(let i=0; i<newArray.length; i++) {
 	if (newArray[i] === "g") {
-		gArray.push(indexOf[i])
+		gArray.push(newArray.indexOf[i])
 	}
+	console.log(gArray)
 }
+
 
 
 };
