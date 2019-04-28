@@ -13,5 +13,21 @@ module.exports.run = function(csv){
 
 	Write your code below the comment.
 */
+const csv = csv;
+const CSV_to_JSON = (data, delimiter = ',') => {
+	//data = the array being passed into the function
+	//.slice starts at the first [0] index of the array, and goes until the '/n' indicator and returns the selected elements as a new array object
+	//.split then knows that the 
+	const titles = data.slice(0, data.indexOf('\n')).split(delimiter);
+	return data
+	  .slice(data.indexOf('\n') + 1)
+	  .split('\n')
+	  .map(v => {
+		const values = v.split(delimiter);
+		return titles.reduce((obj, title, index) => ((obj[title] = values[index]), obj), {});
+	  });
+  };
+
+return CSV_to_JSON('FirstName,LastName,Age\nDan,Tran,29\nDon,Tran,25\nJasmine,Tran,13');
 
 };

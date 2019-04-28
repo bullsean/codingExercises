@@ -8,5 +8,14 @@ A lowercase 'g' in a string is "happy" if there is another 'g' immediately to it
 
         Write your code below the comment.
 */
+var newArray = str.split('');
+gArray = [];
+
+for(let i=0; i<newArray.length; i++) {
+	if (newArray[i] === "g") {
+		gArray.push(indexOf[i])
+	}
+}
+
 
 };
